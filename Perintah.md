@@ -16,3 +16,7 @@ php artisan migrate:fresh
 php artisan make:migration > create_posts_table
 
 php artisan tinker
+
+<!-- Model -->
+php artisan make:model
+
