@@ -18,5 +18,7 @@ php artisan make:migration > create_posts_table
 php artisan tinker
 
 <!-- Model -->
-php artisan make:model
+php artisan make:model > Post
+php artisan make:model Post -m
+
 
