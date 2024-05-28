@@ -40,3 +40,9 @@ php artisan tinker
 App\Models\Post::factory(10)->create();
 
 App\Models\Post::factory(100)->recycle(User::factory(5)->create())->create();
+
+$post = App\Models\Post::first()
+$post->email
+
+$user = App\Models\User::first()
+$user->posts
