@@ -49,3 +49,14 @@ $user->posts
 
 <!-- Category -->
 php artisan make:model Category -mf
+
+php artisan tinker
+App\Models\Post::factory(100)->recycle([Category::factory(3)->create(), User::factory(5)->create()])->create();
+
+
+exit
+clear
+
+<!-- Bersihkan Chace -->
+composer dumpautoload
+php artisan optimize:clear
