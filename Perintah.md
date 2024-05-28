@@ -19,6 +19,18 @@ php artisan tinker
 
 <!-- Model -->
 php artisan make:model > Post
+<!-- Model dan Migrate-->
 php artisan make:model Post -m
 
 
+<!-- Factory -->
+php artisan migrate:fresh
+php artisan tinker
+App\Models\User::factory()->create();
+App\Models\User::factory(10)->create();
+App\Models\User::factory(5)->unverified()->create();
+App\Models\User::factory()->admin()->create();
+
+php artisan make:factory > PostFactory
+php artisan tinker
+App\Models\Post::factory(200)->create();
