@@ -46,3 +46,6 @@ $post->email
 
 $user = App\Models\User::first()
 $user->posts
+
+<!-- Category -->
+php artisan make:model Category -mf
