@@ -34,3 +34,9 @@ App\Models\User::factory()->admin()->create();
 php artisan make:factory > PostFactory
 php artisan tinker
 App\Models\Post::factory(200)->create();
+
+
+php artisan tinker
+App\Models\Post::factory(10)->create();
+
+App\Models\Post::factory(100)->recycle(User::factory(5)->create())->create();
